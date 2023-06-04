@@ -1,0 +1,40 @@
+// Header
+header {
+   @include container;
+
+    .social {
+        display: flex;
+        gap: 10px;
+    }
+
+    a {
+        border: 2px solid $orange;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+
+        &:hover {
+            background: $orange;
+        }
+
+        &:hover i {
+            color: white;
+        }
+    }
+
+    i {
+        color: $orange;
+    }
+} // header
+
+// Mobile
+@media (max-width: 768px){
+    header, .calls {
+        flex-direction: column;
+        text-align: center;
+        line-height: 30px;
+    }
+}

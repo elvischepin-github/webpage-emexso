@@ -1,0 +1,28 @@
+nav {
+   @include container;
+
+    .links {
+        display: flex;
+        gap: 10px;
+
+        a {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+    } // links
+  
+    button {
+      @include btn-style;
+    }
+}
+
+// Mobile
+@media (max-width: 768px){
+    nav .links {
+        display: none;
+    }
+}

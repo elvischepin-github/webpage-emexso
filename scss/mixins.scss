@@ -1,0 +1,31 @@
+@mixin container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+    padding: 15px;
+}
+
+@mixin btn-style {
+    background: $orange;
+    width: 100px;
+    height: 30px;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    transition: 0.3s;
+
+    &:hover {
+        box-shadow: 0 0 2px black;
+        transform: scale(1.1);
+    }
+}
+
+@mixin img-style {
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+}

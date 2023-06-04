@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: josefin sans;
+    font-weight: 400;
+    color: $blue;
+}
+
+hr {
+    width: 95%;
+    max-width: 1024px;
+    height: 0.5px;
+    background: $blue;
+    border: none;
+    margin: auto;
+    opacity: 0.2;
+}

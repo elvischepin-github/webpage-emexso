@@ -1,0 +1,48 @@
+#about {
+    padding: 30px 15px;
+    .container {
+        flex-direction: row-reverse;
+    }
+
+    .img-container {
+        max-width: 300px;
+        min-height: 300px;
+        position: relative;
+
+        .circles {
+            @include img-style;
+            background: url(../assets/circle-shape.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+        .img-2 {
+            background: $about-img;
+            @include img-style;
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 30px;
+        }
+    }
+}
+
+#about ul {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: 15px;
+
+    &:first-of-type {
+        margin-right: 15px;
+    }
+
+    li {
+        font-weight: 600;
+
+        span {
+            color: $orange;
+        }
+    } // li
+} // #about ul

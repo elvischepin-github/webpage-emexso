@@ -1,0 +1,15 @@
+#home {
+    background: $home-color;
+    .img-container2 {
+        position: relative;
+        @include img-style;
+        background: $home-img2;
+        background-size: contain;
+        background-repeat: no-repeat;
+        .img-1 {
+            background: $home-img;
+            @include img-style;
+            position: absolute;
+        }
+    }
+}
