@@ -1,8 +1,11 @@
 // Header
 header {
   @include container;
-  //   div.call-us {
-  //   }
+  div.call-us {
+    .number {
+      width: auto;
+    }
+  }
   //   div.email-us {
   //   }
   .social {
